@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finding Nami</title>
+  <link href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="Assets/findingnami-logo.png" alt="Finding Nami Logo" />
+    </div>
+    <nav class="desktop-nav">
+      <a href="#start">START HERE</a>
+      <a href="#youtube">YOUTUBE</a>
+      <a href="#podcast">PODCAST</a>
+      <a href="#connect">LET'S CONNECT</a>
+    </nav>
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#start">START HERE</a>
+      <a href="#youtube">YOUTUBE</a>
+      <a href="#podcast">PODCAST</a>
+      <a href="#connect">LET'S CONNECT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1 class="fade-left">choose yourself</h1>
+      <p>let's get lost and be found in the art of self-discovery</p>
+      <div class="buttons">
+        <a href="#podcast" class="btn-outline">Listen to Podcast</a>
+        <a href="#youtube" class="btn-filled">Watch on YouTube</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="Assets/hero-image.png" alt="podcast art" />
+    </div>
+  </section>
+
+  <section id="start">
+    <div class="wrapper">
+  <h2 class="section-title">5 days to clarity</h2>
+  <p class="subheading">
+    Join the <strong>FREE</strong> 5-day Clarity Email Course.<br />
+    Daily reflections to help you realign your life and work—one step at a time.
+  </p>
+
+  <div style="display: flex; justify-content: center;">
+    <iframe 
+      src="https://subscribe-forms.beehiiv.com/7eb0eda3-1965-4db3-85fc-6cc9157472f8"
+      class="beehiiv-embed"
+      frameborder="0"
+      scrolling="no"
+      style="width: 100%; max-width: 600px; height: 300px; border: none; border-radius: 12px; background-color: white;">
+    </iframe>
+  </div>
+  </div>
+</section>
+  
+  <div data-beehiiv-form="7eb0eda3-1965-4db3-85fc-6cc9157472f8" data-beehiiv-form-embed="true"></div>
+  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+</section>
+
+
+  <section id="youtube" class="fade-in">
+    <div class="wrapper">
+  <h2 class="section-title">featured videos</h2>
+  <div class="playlist-container">
+    
+    <!-- Main Playlist (Left) -->
+    <div class="main-playlist">
+      <iframe 
+        width="100%" 
+        height="500" 
+        src="https://www.youtube.com/embed/videoseries?list=UU6l19gkK8lrSNndKZn0g7qA" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <!-- Sidebar Playlists (Right) -->
+    <div class="sidebar-playlists">
+      <iframe 
+        width="100%" 
+        height="150" 
+        src="https://www.youtube.com/embed/videoseries?list=PL9J-J-fU6z0ut56jv21uijq3hP5XPcJ7s" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <iframe 
+        width="100%" 
+        height="150" 
+        src="https://www.youtube.com/embed/videoseries?list=PL9J-J-fU6z0tZ53-jjkLgptfhuTUybLL_" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+      <iframe 
+        width="100%" 
+        height="150" 
+        src="https://www.youtube.com/embed/videoseries?list=PL9J-J-fU6z0t3MOR-mCqgVOJbLePaRjXH" 
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="buttons" id="podcast-btn">
+        <button class="btn-filled">Watch More Videos</button>
+      </div>
+    </div>
+</section>
+
+
+
+  <section id="podcast" class="fade-in">
+    <div class="wrapper">
+  <h2 class="section-title">featured episodes</h2>
+
+  <!-- Auto-updating latest episode (Spotify Show Embed) -->
+  <div class="podcast-latest">
+    <iframe 
+      style="border-radius:12px" 
+      src="https://open.spotify.com/embed/show/1L1lXG83sHGZ2fkeadP5fZ" 
+      width="100%" 
+      height="152" 
+      frameborder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <!-- Manually added recent episodes -->
+  <div class="podcast-grid">
+    <!-- Replace EPISODE_ID_1 and EPISODE_ID_2 with your real ones -->
+    <iframe 
+      style="border-radius:12px" 
+      src="https://open.spotify.com/embed/episode/2FotekSiltUQz8Az6QCmD9" 
+      width="100%" 
+      height="152" 
+      frameborder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+
+    <iframe 
+      style="border-radius:12px" 
+      src="https://open.spotify.com/embed/episode/4nx0Om9UaBrQkd7lR9Ir2S" 
+      width="100%" 
+      height="152" 
+      frameborder="0" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="buttons" id="podcast-btn">
+        <button class="btn-filled">Listen to More Episodes</button>
+      </div>
+</div>
+</section>
+
+
+  <section id="connect" class="fade-in">
+  <h2 class="section-title">let's connect</h2>
+  <form action="https://formsubmit.co/itsfindingnami@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+    <!-- Optional redirect -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html"> -->
+
+    <button class="btn-submit" type="submit">Send Message</button>
+  </form>
+</section>
+    <p class="social-handle">Find me on TikTok: <strong>@itsfindingnami</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Finding Nami. All rights reserved.
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
