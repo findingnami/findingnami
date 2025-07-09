@@ -163,6 +163,11 @@ section > .wrapper {
   cursor: pointer;
 }
 
+.btn-outline:hover {
+  background-color: #919A63;
+  color: #fff;
+}
+
 .btn-filled {
   background-color: #919A63;
   color: white;
@@ -171,6 +176,11 @@ section > .wrapper {
   border-radius: 999px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.btn-filled:hover {
+  background-color: #fff;
+  color: #919A63;
 }
 
 .hero-img {
@@ -228,16 +238,6 @@ textarea {
   resize: vertical;
 }
 
-.btn-submit {
-  background-color: #919A63;
-  color: white;
-  border: none;
-  padding: 0.75rem 2rem;
-  border-radius: 999px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 footer {
   text-align: center;
   padding: 2rem;
@@ -249,7 +249,7 @@ footer {
   margin-top: 2rem;
 }
 
-#start, #podcast {
+#start, #youtube {
   background-color: #ffffff;
   padding: 2rem 0;
   width: 100%;
@@ -304,16 +304,33 @@ footer {
   padding: 0 1rem;
   box-sizing: border-box;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .beehiiv-embed {
   width: 100%;
-  max-width: 600px;
+  max-width: 100%;
   height: 300px;
   border: none;
   border-radius: 12px;
   background-color: white;
+  box-sizing: border-box;
 }
+
+.connect-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.connect-social p {
+  margin: 0;
+}
+
 
 
 /* Mobile Styles */
@@ -384,6 +401,10 @@ nav.mobile-nav.show {
   pointer-events: auto; /* Enable interaction */
   opacity: 1;
 }
+
+.beehiiv-embed {
+    height: 350px; /* increase if content is tall on small screens */
+  }
 
 
 }
