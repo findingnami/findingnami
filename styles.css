@@ -315,21 +315,38 @@ footer {
 .beehiiv-wrapper {
   display: flex;
   justify-content: center;
+  width: 100%;
   padding: 0 1rem;
   box-sizing: border-box;
-  width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .beehiiv-embed {
   width: 100%;
-  max-width: 100%;
+  max-width: 600px;
   height: 300px;
   border: none;
   border-radius: 12px;
   background-color: white;
   box-sizing: border-box;
 }
+
+/* Beehiiv Override Styles */
+#beehiiv-subscribe-form {
+  width: 100% !important;
+  padding: 2rem 1rem !important;
+  box-sizing: border-box;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#beehiiv-subscribe-form form {
+  width: 100% !important;
+  max-width: 500px !important;
+  box-sizing: border-box;
+}
+
+
 
 .connect-social {
   display: flex;
