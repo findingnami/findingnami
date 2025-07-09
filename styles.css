@@ -1,6 +1,7 @@
 /* Base Styles */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .fade-in {
@@ -31,6 +32,8 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #E5D2C4;
   color: #000;
+  padding-top: 100px;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -47,13 +50,13 @@ header {
   background-color: #E5D2C4;
   color: black;
   z-index: 999;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);*/
 }
 
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -156,13 +159,15 @@ section > .wrapper {
 .buttons {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* allow vertical stacking when needed */
+  justify-content: start; /* optional: center buttons */
 }
 
 .btn-outline,
 .btn-filled {
   text-decoration: none;
   display: inline-block;
+  flex-wrap: nowrap;
 }
 
 .btn-outline {
@@ -173,6 +178,7 @@ section > .wrapper {
   color: black;
   font-weight: 500;
   cursor: pointer;
+  flex-wrap: nowrap;
 }
 
 .btn-outline:hover {
@@ -188,6 +194,7 @@ section > .wrapper {
   border-radius: 999px;
   font-weight: 500;
   cursor: pointer;
+  flex-wrap: nowrap;
 }
 
 .btn-filled:hover {
@@ -261,6 +268,7 @@ footer {
 .social-handle {
   text-align: center;
   margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 #start, #youtube {
@@ -315,21 +323,28 @@ footer {
 .beehiiv-wrapper {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
   padding: 0 1rem;
+  overflow-x: auto;         /* Allows scrolling if needed */
+  width: 100vw;             /* Take full viewport width */
+  max-width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .beehiiv-embed {
+  min-width: 320px;         /* Prevents being too narrow */
   width: 100%;
   max-width: 600px;
-  height: 300px;
+  height: auto;
+  min-height: 450px;
   border: none;
   border-radius: 12px;
   background-color: white;
   box-sizing: border-box;
 }
+
+
+
 
 /* Beehiiv Override Styles */
 #beehiiv-subscribe-form {
@@ -350,19 +365,50 @@ footer {
 
 .connect-social {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   text-align: center;
 }
 
-.connect-social p {
-  margin: 0;
+.tiktok-btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tiktok-btn a {
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #919A63;
+  border-radius: 999px;
+  color: black;
+  font-weight: 500;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+}
+
+.tiktok-btn a:hover {
+  background-color: #919A63;
+  color: white;
 }
 
 
+.tiktok-btn-outline {
+  border: 2px solid #919A63;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: none;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  flex-wrap: nowrap;
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -396,10 +442,15 @@ footer {
   }
 
   .buttons {
-    justify-content: center;
-    flex-wrap: nowrap;
-    text-align: center;
+    flex-direction: column; /* stack buttons vertically */
+    align-items: center; /* center-align buttons */
+  }
 
+  .btn-outline,
+  .btn-filled {
+    width: 100%;            /* make buttons full width */
+    max-width: 300px;       /* optional: limit width */
+    text-align: center;     /* center text */
   }
 
   .playlist-container {
@@ -435,8 +486,45 @@ nav.mobile-nav.show {
   opacity: 1;
 }
 
+
+
+.beehiiv-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  overflow-x: auto; /* allows horizontal scroll if needed */
+  width: 100vw; 
+  margin-bottom: 0;
+  padding-bottom: 0;
+
+}
+
 .beehiiv-embed {
-    height: 350px; /* increase if content is tall on small screens */
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  height: auto;
+  min-height: 450px;
+  border: none;
+  border-radius: 12px;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+
+  .connect-social {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .tiktok-btn a {
+    width: 100%;
+    max-width: 250px;
   }
 
 
