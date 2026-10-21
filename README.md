@@ -9,8 +9,9 @@ Static site for GitHub Pages. No build step.
 | `/` (includes About and Contact) | `index.html` |
 | `/apps/` | `apps/index.html` |
 | `/apps/readfully/` | `apps/readfully/index.html` |
-| `/apps/privacy/` | `apps/privacy/index.html` |
-| `/apps/support/` | `apps/support/index.html` |
+| `/apps/readfully/privacy/` | `apps/readfully/privacy/index.html` |
+| `/apps/readfully/support/` | `apps/readfully/support/index.html` |
+| `/apps/privacy/` and `/apps/support/` redirect to the new addresses | `apps/privacy/`, `apps/support/` |
 | `/photography/` redirects to the Adobe Portfolio | `photography/index.html` |
 | `/podcast/` redirects to Spotify | `podcast/index.html` |
 | `/youtube/` redirects to YouTube | `youtube/index.html` |
@@ -30,5 +31,5 @@ Shared styles and animation: `assets/style.css`, `assets/site.js`.
 ## Notes
 
 - Links are root-relative (`/apps/`). They work on the custom domain `findingnami.com`. If you preview at `username.github.io/repo-name/`, they will not.
-- Update your App Store Connect privacy policy and support URLs to `https://findingnami.com/apps/privacy/` and `https://findingnami.com/apps/support/` when these pages go live.
+- Update your App Store Connect privacy policy and support URLs to `https://findingnami.com/apps/readfully/privacy/` and `https://findingnami.com/apps/readfully/support/` when these pages go live.
 - Replace the privacy policy and support text with the exact wording from your existing pages if you need it verbatim.
